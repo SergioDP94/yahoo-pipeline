@@ -133,20 +133,3 @@ En la acción **Iniciar un programa**, utiliza estas rutas de ejemplo:
 Sustituye las rutas por la ubicación real del proyecto. Configura la tarea para que no inicie una nueva instancia si ya hay una en ejecución.
 
 El equipo debe estar disponible y tener conexión a internet. No es necesario mantener VS Code abierto, activar el entorno ni reinstalar los paquetes diariamente.
-
-## Reutilizar datos del notebook
-
-Si ya ejecutaste el notebook original, copia las carpetas `data`, `logs` y `control` de la antigua carpeta `pipeline_yahoo` a la raíz de este proyecto. Evita sobrescribir un histórico nuevo sin revisar antes su contenido.
-
-## Alcances del ejercicio
-
-- La ventana de 30 días es una regla conservada del notebook, no una garantía de disponibilidad de Yahoo Finance. No permite recuperar cualquier fecha histórica.
-- La validación exige todos los minutos esperados de la sesión. Una sesión incompleta queda pendiente, sin crear un JSON definitivo nuevo.
-- Los archivos válidos no se actualizan automáticamente si el proveedor corrige sus datos posteriormente.
-- El proceso está diseñado para una sola ejecución simultánea.
-- La pausa configurada reduce la frecuencia de solicitudes, pero no garantiza ausencia de restricciones.
-- El acceso al servicio y sus condiciones pueden cambiar. No se deben eliminar los controles de pausa para insistir ante bloqueos.
-
-## Qué subir al repositorio
-
-Comparte los scripts, `requirements.txt` y este README. Mantén fuera del control de versiones el entorno `.venv`, las carpetas `__pycache__` y los datos o registros locales generados durante las prácticas, salvo que quieras publicar expresamente una muestra.
